@@ -484,7 +484,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "bug-o-matic.dsn",
+      "specctra_dsn": "../cam/bug-o-matic.dsn",
       "step": "",
       "vmrl": "",
       "vrml": ""
