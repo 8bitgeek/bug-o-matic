@@ -1,0 +1,141 @@
+
+(rules PCB bug-o-matic
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 4)
+    (plane_via_costs 5)
+    (start_ripup_costs 8)
+    (start_pass_no 16024)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 4.4)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 100.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 200.2 (type default_OldDefault))
+    (clear 25.0 (type smd_smd))
+    (clear 200.2 (type smd_OldDefault))
+    (clear 200.2 (type "kicad_default"_OldDefault))
+    (clear 200.2 (type OldDefault_OldDefault))
+    (clear 200.2 (type OldDefault_PWR))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-OldDefault" "Via[0-3]_800:400_um" OldDefault
+  )
+  (via 
+    "Via[0-3]_800:400_um-PWR" "Via[0-3]_800:400_um" PWR
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (via_rule
+    OldDefault "Via[0-3]_800:400_um-OldDefault"
+  )
+  (via_rule
+    PWR "Via[0-3]_800:400_um-PWR"
+  )
+  (class default
+    "Net-(U1-C2+)" /TDI /TCK /TMS /TDO "Net-(U1-C2-)" "Net-(U1-VS+)" /TRST
+    /SRST "Net-(U3-PD1)" "Net-(U1-C1-)" "Net-(U1-C1+)" "Net-(U3-PD0)" "/CH_NRST" "Net-(D1-K)" "/MCU-TRST"
+    "/MCU-TDI" "/MCU-TCK" "/MCU-TMS" "/MCU-TDO" "/MCU-SRST" "Net-(D8-K)" "Net-(D9-K)" "/MCU_SWNRST"
+    "/MCU_SWO" "/MCU_SWDIO" "/MCU_SWCLK" "Net-(J2-Pad1)" /TXD /RXD /CTS /RTS
+    "unconnected-(J2-Pad9)" /AUX6 /AUX5 /AUX4 /AUX3 /AUX2 /AUX1 /AUX0
+    "/I2C_SCL" "/I2C_SDA" "/UART_TX" "/UART_RX" "/CH_SWCLK" "/CH_SWDIO" "/CH_SWO" "unconnected-(J9-Pin_11)"
+    "unconnected-(J9-Pin_17)" "unconnected-(J9-Pin_19)" /SWCLK /SWDIO /NRST /SWO /UD+ "/UD-"
+    /BOOT1 "/MCU_SWDIO_PUD" "/MCU_RS232_CTS" "/MCU_RS232_RTS" "/MCU_RS232_TX" "/MCU_RS232_RX" "unconnected-(U3-PC13)" "Net-(D7-A)"
+    "Net-(J1-D+)" "Net-(J1-D-)" /ST0 /ST1 "Net-(C18-Pad2)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class OldDefault
+    (clearance_class OldDefault)
+    (via_rule OldDefault)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class PWR
+    GND /VUSB +5V +VSW +3V3 /VOUTR /VOUT /VTARGET
+    /VSWD
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 450.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
