@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "MCP3021")(type "Legacy")(uri "${KIPRJMOD}/MCP3021/MCP3021.lib")(options "")(descr ""))
+)
