@@ -3,3 +3,4 @@
 
 [<img src="http://www.8bitgeek.net/bug-o-matic/bug-o-matic.png" width="400" height="240">](http://www.8bitgeek.net/bug-o-matic)
 
+[<img src="http://www.8bitgeek.net/bug-o-matic/bug-o-matic-sch.png" width="600" height="380">](http://www.8bitgeek.net/bug-o-matic)
