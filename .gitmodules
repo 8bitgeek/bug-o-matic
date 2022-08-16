@@ -1,6 +1,3 @@
-[submodule "fw/_src/libopencm3"]
-	path = fw/_src/libopencm3
-	url = https://github.com/8bitgeek/libopencm3.git
 [submodule "fw/_src/briscits-bsp"]
 	path = fw/_src/briscits-bsp
 	url = https://github.com/8bitgeek/briscits-bsp.git
