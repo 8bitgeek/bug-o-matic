@@ -1,4 +1,8 @@
 
+# Bug-O-Matic Schematic Diagram
+
+[<img src="http://www.8bitgeek.net/bug-o-matic/bug-o-matic-sch-reva.png" width="600" height="380">](http://www.8bitgeek.net/bug-o-matic)
+
 # MCU Pinout 
 
 | TAG            | PIN  | MODE | PERIPHERAL |
