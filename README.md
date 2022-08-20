@@ -7,4 +7,4 @@
 
 # Project Documents
 
-Bug over to [Hardware](https://github.com/8bitgeek/bug-o-matic/tree/master/hw/README.md) or [Firmware](https://github.com/8bitgeek/bug-o-matic/tree/master/fw/README.md) for more documentation and HOWTO.
+Bug over to [Hardware](https://github.com/8bitgeek/bug-o-matic/tree/master/hw) or [Firmware](https://github.com/8bitgeek/bug-o-matic/tree/master/fw) for more documentation and HOWTO.
