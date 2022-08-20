@@ -41,3 +41,5 @@
 | MCU-TCK        | PB13 | OUT  | SPI2_SCK   |
 | MCU-TDI        | PB14 | IN   | SPI2_MISO  |
 | MCU-TDO        | PB15 | OUT  | SPI2_MOSI  |
+| ST0            | PC14 | OUT  | GPIO       |
+| ST1            | PC15 | OUT  | GPIO       |
