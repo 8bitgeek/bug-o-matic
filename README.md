@@ -12,6 +12,6 @@ git submodule init
 git submodule update --recursive
 ```
 
-# Next steps
+# Documentation
 
 Bug over to [Hardware](https://github.com/8bitgeek/bug-o-matic/tree/master/hw) or [Firmware](https://github.com/8bitgeek/bug-o-matic/tree/master/fw) for more documentation and HOWTO.
