@@ -6,7 +6,7 @@
 
 # Set up your cook project path
 ```
-cd bug-o-matic/fw/brisc-bsp
-cook --project `pwd`
+cd bug-o-matic/fw/briscits-bsp
+cook --project `pwd` --target bug-o-matic
 ```
 
