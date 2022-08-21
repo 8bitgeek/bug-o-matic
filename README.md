@@ -3,7 +3,7 @@
 
 [<img src="http://www.8bitgeek.net/bug-o-matic/bug-o-matic.png" width="400" height="240">](http://www.8bitgeek.net/bug-o-matic)
 
-# Cloning and setting up a working coopy of the bug-o-matic repository
+# Setting up a working copy of the repository
 
 ```
 git clone https://github.com/8bitgeek/bug-o-matic.git
